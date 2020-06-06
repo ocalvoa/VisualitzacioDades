@@ -14,7 +14,7 @@ var chart2 = d3.select("#tree")
     "translate(" + margin2.left + "," + margin2.top+ ")");
 
 // Read data
-d3.csv('tree.csv', function(data) {
+d3.csv('https://github.com/ocalvoa/VisualitzacioDades/tree/master/Data/tree.csv', function(data) {
 // stratify the data: reformatting for d3.js
 var anidados = d3.nest()
             .key(function(d){return d.Region;})

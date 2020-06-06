@@ -13,7 +13,7 @@ var chart1 = d3.select("#line_filter")
           "translate(" + margin1.left + "," + margin1.top + ")");
 
 //Read the data
-d3.csv("densitat.csv", function(data) {
+d3.csv("https://github.com/ocalvoa/VisualitzacioDades/tree/master/Data/densitat.csv", function(data) {
 
     // List of groups (here I have one group per column)
     var allGroup = d3.map(data, function(d){return(d.regio)}).keys()
