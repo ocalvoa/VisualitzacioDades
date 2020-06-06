@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Grafics D3.js </title>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <!-- Load d3-cloud -->
+        <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+        <!-- Color Scale -->
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    </head>
+
+    <body>
+      <table>
+        <tr>
+          <td>
+            <h1 style="color:SlateBlue;">Nombre d'acords de pau diferents</h1>
+            <select id="selectButton"></select>
+            <div id="line_filter"></div>
+          </td>
+          <td>
+            <h1 style="color:SlateBlue;">WordCloud dels tractats de pau per regio</h1>
+            <select id="drop"></select>
+            <div id="word_cloud"></div>
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <h1 style="color:SlateBlue;">Paisos involucrats en els acords de pau</h1>
+            <div id="tree"></div>
+          </td>
+          <td>
+            <h1 style="color:SlateBlue;">Nombre de tractats amb mencions religioses</h1>
+            <div id="heatmap"></div>
+          </td>
+        </tr>
+        <tr>
+
+        </tr>
+      </table>
+
+      <!-- d3 includes -->
+      <script src="./line_filter2.js"></script>
+      <script src="./tree.js"></script>
+      <script src="./heatmap.js"></script>
+      <script src="./wordcloud.js"></script>
+
+    </body>
+</html>
