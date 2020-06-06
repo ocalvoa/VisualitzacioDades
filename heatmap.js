@@ -47,7 +47,7 @@ var myColor = d3.scaleLinear()
   .domain([1,100])
 
 //Read the data
-d3.csv("https://github.com/cccruzr/maps/blob/master/LideresSociales/data/data_lideres.csv", function(data) {
+d3.csv("./Data/data_lideres.csv", function(data) {
   // create a tooltip
   var tooltip = d3.select("#heatmap")
     .append("div")

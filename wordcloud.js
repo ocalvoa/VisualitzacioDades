@@ -11,7 +11,7 @@ var chart4 = d3.select("#word_cloud").append("svg")
     .attr("transform",
           "translate(350,250)");
 
-var a = d3.csv("https://github.com/ocalvoa/VisualitzacioDades/tree/master/Data/wc.csv", function(data) {
+var a = d3.csv("./Data/wc.csv", function(data) {
   // List of groups (here I have one group per column)
   var allGroup =["Africa (excl MENA)","Americas","Asia and Pacific","Cross-regional","Europe and Eurasia", "Middle East and North Africa"];
 
